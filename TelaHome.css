@@ -1,17 +1,19 @@
 body
 {
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
     padding: 0;
-    background: #fff;
-}
+    background: #ffffff;
+} 
+
 ul
 {
 position: absolute;
-top: 15%;
-left: 30%;
+top: 25%;
+left: 50%;
 transform: translate(-50%,-50%);
 display: flex;
-background: #000;
+background: rgb(0, 0, 0);
 border-radius: 30px;
 overflow: hidden;
 box-shadow: 0 0 0 5px #333;
@@ -41,7 +43,7 @@ ul li.active a
     color: #262626;
 }
 
-.slide
+.slide-filtro
 {
     position: absolute;
     width: 150px;
@@ -53,31 +55,31 @@ ul li.active a
     transition: 0.5s;
     opacity: 0;
 }
-ul li:nth-child(1).active ~ .slide
+ul li:nth-child(1).active ~ .slide-filtro
 {
 left: 0;
 opacity: 1;
 
 }
-ul li:nth-child(2).active ~ .slide
+ul li:nth-child(2).active ~ .slide-filtro
 {
 left: 150px;
 opacity: 1;
 
 }
-ul li:nth-child(3).active ~ .slide
+ul li:nth-child(3).active ~ .slide-filtro
 {
 left: 300px;
 opacity: 1;
 
 }
-ul li:nth-child(4).active ~ .slide
+ul li:nth-child(4).active ~ .slide-filtro
 {
 left: 450px;
 opacity: 1;
 
 }
-ul li:nth-child(5).active ~ .slide
+ul li:nth-child(5).active ~ .slide-filtro
 {
 left: 600px;
 opacity: 1;
